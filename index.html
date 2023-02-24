@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width"/>
+        <title>Wordle</title>
+        <link rel="stylesheet" href="./style.css"/>
+    </head>
+    <body>
+
+        <nav>
+            <div id="wordle">
+                Wordle
+            </div>
+            <p onclick="darkMode()" id="darkicon">&#9681</p>
+            <p id="questionmark">&#63</p>
+            <p id="info">&#9432</p>
+        </nav>
+        <div id="container-body">
+            <div id="information" class="info">
+                <ul style="list-style-type:circle;">
+                    <h3>
+                        <bold>How to play:</bold>
+                    </h3>
+                    <li>
+                        Start typing. The letters will appear in the boxes</li>
+                    <li>Remove letters with backspace
+                    </li>
+                    <li>
+                        hit enter/return to submit an answer</li>
+                    <li>letter with green background are in the right spot</li>
+                    <li>letter with yellow background exist in the word, but are in the wrong spots</li>
+                    <li>letters with grey background does not exist in the word</li>
+                    <li>if you need a hint press the ? icon</li>
+                </ul>
+            </div>
+            <div class="container">
+                <div id="gameContainer"></div>
+
+                <div id="winner"><img
+                    src="https://res.cloudinary.com/mkf/image/upload/v1675467141/ENSF-381/labs/congrats_fkscna.gif"></div>
+
+                <div class="start">
+                    <botton id="startButton" class="startover" onclick="refresh()">Start Over</botton>
+                </div>
+            </div>
+        </div>
+
+        <div id="hint-text"></div>
+        <div class="bottom-txt">
+            &#169 magdy</div>
+        <script src="./wordle.js"></script>
+    </body>
+</div>
+</html>

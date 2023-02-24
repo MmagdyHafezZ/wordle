@@ -15,7 +15,7 @@ document.getElementById("questionmark").addEventListener("click", function () {
             hintText.style.display = "block";
         }
     });
-const infoToggle = document.getElem`entById("info");
+const infoToggle = document.getElementById("info");
 
 infoToggle.addEventListener("click", () => {
     var panel = document.getElementById("information");

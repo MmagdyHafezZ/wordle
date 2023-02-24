@@ -374,10 +374,12 @@ function refresh() {
     //     .catch((err) => {
     //         console.log("Error", err);
     //     });
-
+    var gameover = document.getElementById("hint-text");
+    gameover.style.background = "green";
     clearGameGrid();
     updateGameGrid();
     word_generator();
+
     keyboardpresses();
 
 }
